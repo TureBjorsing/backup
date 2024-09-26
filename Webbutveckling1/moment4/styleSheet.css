@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6,1fr); /* 6 columner och "1 fraction" lika stora */
+    grid-auto-rows: minmax(10rem, auto); /* minst 10rem hög, auto höjd */
+    grid-gap: 1rem; /* 1rem mellanrum */
+}
+
+main section {
+    grid-column: span 6; /* 6 kolumner bred */
+    padding: 0.5rem;
+}
+
+/* Mobil */
+.col-1 {grid-column: span 1;}
+.col-2 {grid-column: span 1;}
+.col-3 {grid-column: span 1;}
+.col-4 {grid-column: span 1;}
+.col-5 {grid-column: span 1;}
+.col-6 {grid-column: span 1;}
+
+/* row-span */
+.row-2 {grid-row: span 2;}
+.row-3 {grid-row: span 3;}
+.row-4 {grid-row: span 4;}
+.row-5 {grid-row: span 5;}
+
+@media (min-width: 768px) {
+    [class*="col-"] {       /* Reset av row-span */
+        grid-column: span 1;
+    }
+    
+    .col-t-1 {grid-column: span 1;}
+    .col-t-2 {grid-column: span 1;}
+    .col-t-3 {grid-column: span 1;}
+    .col-t-4 {grid-column: span 1;}
+    .col-t-5 {grid-column: span 1;}
+    .col-t-6 {grid-column: span 1;}
+
+    .row-t-2 {grid-row: span 1;}
+    .row-t-3 {grid-row: span 1;}
+    .row-t-4 {grid-row: span 1;}
+    .row-t-5 {grid-row: span 1;}
+}

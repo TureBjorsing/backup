@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling 1</title>
+</head>
+<body>
+    <header>                            <!-- Header, footer nav är för att enklare organisera -->
+        <h1>Webbutveckling 1</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://dn.se">DN</a></li>
+            <li><a href="pages/about.html">OM</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <table border="1">      <!-- Gör en tabell -->
+            <tr>                <!-- Gör en rad i tabellen -->
+                <td colspan="2">            <!-- Det som ska va i tabellen || colspan gör två kolumner till en -->
+                    hej
+                </td>
+               
+                <td>
+                    dig
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    hej
+                </td>
+                <td rowspan="2">    <!-- Lägger ihop två rader -->
+                    på
+                </td>
+                <td>
+                    dig
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    hej
+                </td>
+
+                <td>
+                    dig
+                </td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <caption>
+                Budget              <!-- Skaper en rubrik till tabellen-->
+            </caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>     <!-- &nbsp är mellanslag -->
+                    <th>Januari</th>
+                    <th>Februari</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Tot</td>
+                    <td>550 kr</td>
+                    <td>-150 kr</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Intäckter</td>
+                    <td>850 k</td>
+                    <td>300 kr</td>
+                </tr>
+                <tr>
+                    <td>Utgifter</td>
+                    <td>300 kr</td>
+                    <td>450 kr</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Moment 2</h2>
+
+        <p>
+            <em>Lorem</em> <strong>ipsum</strong> dolor sit <a href="https://dn.se" title="DN Morgontidning">DN</a>
+            amet consectetur adipisicing elit. In accusantium quam libero maxime non, quos assumenda est,
+            voluptatum corporis reiciendis adipisci sed, sunt provident eligendi neque dicta corrupti a omnis?
+        </p>
+
+        <p>
+            <span style="color:red;">y</span> = x <sup>2</sup>     <!-- Kan skriva "style" till andra taggar som t.ex. <strong> -->
+            H<sub>2</sub>0 <br>
+
+            <figure>
+                <img src="images/monkey.jpeg" alt="monkey" width="1085" height="814"> 
+                <figcaption>
+                    "Banana" - Monke                      <!-- Information om bilden -->
+                </figcaption>
+            </figure>
+        </p>
+
+    </main>
+
+    <a href="https://dn.se">DN</a>
+
+    <a href="pages/about.html">OM</a>
+
+    <footer>
+        <p> Senast ändrad 2023-09-12 </p>
+        <address>Författare: 06bjtu@skola.engelholm.se</address>
+    </footer>
+</body>
+</html>
